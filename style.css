@@ -1,0 +1,32 @@
+.layout > * {
+    margin: 18px 12px;
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.first-name, .last-name, .age {
+    flex: 25%;
+}
+.address {
+    flex: 100%;
+}
+.place-of-work, .job-title, .phone-number, .skype {
+    flex: 40%;
+}
+
+button[type="submit"] {
+    flex: 100%;
+    margin: 4px 0 14px 0;
+}
+
+@media (max-width: 767px) {
+    .form > * {
+        flex: 100%;
+    }
+    button[type="submit"] {
+        margin: 0 0 14px 0;
+    }
+}
